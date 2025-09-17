@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"com.arnau.library2425","l":"Cadenes"},{"p":"com.arnau.library2425","l":"Numeros.ex18"},{"p":"com.arnau.library2425","l":"Numeros"}];updateSearchResults();
