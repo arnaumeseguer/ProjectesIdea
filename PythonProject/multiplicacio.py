@@ -1,0 +1,1 @@
+print(f"El resultat es: {89789798 * 72665512}")
