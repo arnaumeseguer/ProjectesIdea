@@ -6,7 +6,7 @@ cadena = input("Introduir cadena: ")
 
 for i in range(len(cadena)):
     if isVowel(cadena[i]):
-        continue
+        print(cadena[i], end="")
 
     else:
-        print(cadena[i], end="")
+        continue
