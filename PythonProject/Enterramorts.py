@@ -21,7 +21,7 @@ for i in range(lapidesQuant):
 pes = 0
 prioritat = 0
 
-for lapida in reversed(lapides):
+for lapida in sorted(reversed(lapides)):
     if pes + lapides[lapida][0] <= pesMax:
         pes += lapides[lapida][0]
         prioritat += lapides[lapida][1]
