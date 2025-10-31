@@ -1,8 +1,9 @@
 import java.util.Calendar
 
 fun main(){
-    var Persona1 = Persona("Walid", 18, "Marroc")
-    Persona1.P13()
+    val Estudiant = Estudiant("Joan", 20, 3)
+    Estudiant.P17Aprovat()
+
 }
 
 
@@ -173,5 +174,40 @@ class Cotxe (val marca: String, val model: String, val any: Int){
     fun P14(){
         val edat = Calendar.getInstance().get(Calendar.YEAR) - any
         print("El cotxe eś de la marca $marca, model $model i té $edat anys")
+    }
+}
+
+class CompteBancari(val numComtpe: Int, var saldo: Int){
+    fun P15ingressar(ingres:Int): Int{
+        saldo = saldo + ingres
+        println("nou saldo: $saldo")
+        return saldo + ingres
+    }
+
+    fun P15retirar(retir:Int): Int{
+        saldo = saldo - retir
+        println("nou saldo: $saldo")
+        return saldo - retir
+    }
+}
+
+class Llibre (val titol: String, val autor: String, val preu: Int){
+
+    fun P16Descompte(descompte:Int){
+        println("El llibre es titula $titol, l'autor es $autor i té un preu de $preu€")
+        println("Amb un descompte del $descompte% el preu és: ${preu - (preu * descompte / 100)}")
+    }
+}
+
+class Estudiant (val nom: String, val edat: Int, val notaMitjana: Int){
+
+    fun P17Aprovat(): Boolean{
+        if(notaMitjana >= 5){
+            println("L'estudiant $nom ha aprovat")
+            return true
+        }else {
+            println("L'estudiant $nom està suspès")
+            return false
+        }
     }
 }
