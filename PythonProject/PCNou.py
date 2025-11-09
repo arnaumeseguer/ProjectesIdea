@@ -1,6 +1,8 @@
 import math
 
-preu = int(input())
-sou = int(input())
+sencer = input()
+temp = sencer.split(" ")
+preu = float(temp[0])
+sou = float(temp[1])
 
-print(f"En Pere ha d'estalviar durant {round(preu/sou*30)} dies")
+print(f"En Pere ha d'estalviar durant {math.ceil(preu/sou*30)} dies")
