@@ -1,0 +1,5 @@
+Hola, això és un arxiu de prova per a la pràctica 6.
+
+El programa comptará quantes línies té el fitxer.
+
+Els espais en blanc també conten? Ara ho veurem jaja.
