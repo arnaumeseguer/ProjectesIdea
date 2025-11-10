@@ -1,3 +1,10 @@
-cadena1 = input("Introdueix cadena: ")
-cadena2 = input("Introdueix cadena: ")
+def ordreAlfabetic():
+    cadena1 = input()
+    cadena2 = input()
 
+    if cadena1 < cadena2:
+        return cadena1
+    else:
+        return cadena2
+
+print(ordreAlfabetic())
