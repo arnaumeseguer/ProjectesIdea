@@ -5,21 +5,22 @@ index = 0
 for i in range(casos):
     index = 0
     grup = input()
-    split1 = grup.split(", ")
-    remain = split1[len(split1) - 1]
-    split2 = remain.split(" i ")
-    arr = []
-    for i in range(len(split1)- 1):
-        arr.append(split1[i])
-    arr.append(split2[0])
-    arr.append(split2[1])
-
-
+    pos = grup.rfind(" i ")
+    if pos == -1:
+        arr = grup.split(", ")
+    else:
+        left = grup[:pos]
+        last = grup[pos + 3:]
+        if left.strip() == "":
+            arr = [last.strip()]
+        else:
+            arr = left.split(", ")
+            arr.append(last.strip())
     for nom in arr:
         if nom[0] in accent:
-            print(noaccent[accent.index(nom[0])])
+            print(noaccent[accent.index(nom[0])], end="")
         else:
-            print(nom[0])
+            print(nom[0], end="")
 
 
 
